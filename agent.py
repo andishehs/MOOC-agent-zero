@@ -132,7 +132,7 @@ class AgentConfig:
     msgs_keep_end: int = 10
     response_timeout_seconds: int = 60
     max_tool_response_length: int = 3000
-    code_exec_docker_enabled: bool = True
+    code_exec_docker_enabled: bool = False
     code_exec_docker_name: str = "agent-zero-exe"
     code_exec_docker_image: str = "frdel/agent-zero-exe:latest"
     code_exec_docker_ports: dict[str, int] = field(
